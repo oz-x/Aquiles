@@ -2,7 +2,7 @@
 # Instala o actualiza Aquiles en Mac o en Linux compilándolo desde una rama del repositorio (main por defecto).
 # Es el equivalente de instalar.ps1.
 #
-#   git clone https://github.com/evilrender23/Aquiles
+#   git clone https://github.com/oz-x/Aquiles
 #   bash Aquiles/instalar.sh [--repo URL|RUTA] [--rama main] [--destino CARPETA] [--app RUTA/Aquiles.app]
 #
 # También vale descargado suelto, o con `curl -fsSL <url de raw.githubusercontent.com> | bash` si el
@@ -32,7 +32,7 @@ case "$(uname -s)" in
     *) echo "Este instalador es para Mac y Linux; en Windows, usa instalar.ps1." >&2; exit 2 ;;
 esac
 
-REPO='https://github.com/evilrender23/Aquiles'
+REPO='https://github.com/oz-x/Aquiles'
 RAMA='main'
 if $LINUX; then DESTINO="${XDG_DATA_HOME:-$HOME/.local/share}/Aquiles"; else DESTINO="$HOME/Library/Application Support/Aquiles"; fi
 APP=''

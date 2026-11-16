@@ -1,6 +1,6 @@
 # Instala o actualiza Aquiles compilándolo desde una rama del repositorio (main por defecto).
 #
-#   git clone https://github.com/evilrender23/Aquiles
+#   git clone https://github.com/oz-x/Aquiles
 #   powershell -ExecutionPolicy Bypass -File Aquiles\instalar.ps1 [-Repo URL|RUTA] [-Rama main] [-Destino CARPETA]
 #
 # También vale descargado suelto, o con `irm <url de raw.githubusercontent.com> | iex` si el repo es
@@ -19,7 +19,7 @@
 # app\, espera a que Aquiles se cierre (-EsperarPid) para cambiar las carpetas.
 # Se guarda sin BOM a propósito: `irm | iex` no lo admite.
 param(
-    [string]$Repo = 'https://github.com/evilrender23/Aquiles',
+    [string]$Repo = 'https://github.com/oz-x/Aquiles',
     [string]$Rama = 'main',
     [string]$Destino = (Join-Path $env:LOCALAPPDATA 'Aquiles'),
     [switch]$Actualizar,

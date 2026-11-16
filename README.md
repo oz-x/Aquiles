@@ -43,14 +43,14 @@ Es un proyecto personal: lo hago para mi propio uso y no hay soporte. El código
 En PowerShell, clona el repositorio y ejecuta el instalador. Hace falta Git (`winget install -e --id Git.Git`). Si el repositorio es privado, `git` te pedirá la primera vez una cuenta de GitHub que tenga acceso.
 
 ```powershell
-git clone https://github.com/evilrender23/Aquiles.git
+git clone https://github.com/oz-x/Aquiles.git
 powershell -ExecutionPolicy Bypass -File Aquiles\instalar.ps1
 ```
 
 Si el repositorio es público, basta con una línea:
 
 ```powershell
-irm https://raw.githubusercontent.com/evilrender23/Aquiles/main/instalar.ps1 | iex
+irm https://raw.githubusercontent.com/oz-x/Aquiles/main/instalar.ps1 | iex
 ```
 
 El script hace tres cosas:
@@ -70,14 +70,14 @@ Una copia suelta de la app (sin instalar) ofrece ahí «Instalar con actualizaci
 En la Terminal, clona el repositorio y ejecuta el instalador:
 
 ```bash
-git clone https://github.com/evilrender23/Aquiles.git
+git clone https://github.com/oz-x/Aquiles.git
 bash Aquiles/instalar.sh
 ```
 
 Si el repositorio es público, basta con una línea:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/evilrender23/Aquiles/main/instalar.sh | bash
+curl -fsSL https://raw.githubusercontent.com/oz-x/Aquiles/main/instalar.sh | bash
 ```
 
 Hace lo mismo que en Windows:
@@ -101,7 +101,7 @@ El núcleo recibe el PATH de tu shell (`~/.zshrc` y compañía), así que encuen
 Igual que en Mac, con el mismo instalador:
 
 ```bash
-git clone https://github.com/evilrender23/Aquiles.git
+git clone https://github.com/oz-x/Aquiles.git
 bash Aquiles/instalar.sh
 ```
 
